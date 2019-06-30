@@ -14,3 +14,7 @@ docker-compose run app sh -c "python manage.py makemigrations core"
 docker-compose run app sh -c "python manage.py test"
 
 docker-compose up
+
+docker-compose run --rm app sh -c "python manage.py startapp user"
+
+docker-compose run --rm app sh -c "python manage.py test"
