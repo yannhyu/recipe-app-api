@@ -3,10 +3,10 @@ from rest_framework.routers import DefaultRouter
 from recipe import views
 
 
-router = DefaultRouter()
+router = DefaultRouter()   # Auto generate API endpoints for TagViewSet
 router.register('tags', views.TagViewSet)
 
-app_name = 'recipe'
+app_name = 'recipe'    # So that the reverse() can locate the correct urls
 
 urlpatterns = [
     path('', include(router.urls))

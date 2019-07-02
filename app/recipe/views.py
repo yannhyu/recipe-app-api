@@ -14,6 +14,7 @@ class TagViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
     serializer_class = serializers.TagSerializer
 
     # Override the default get_queryset()
+    # for custom filtering
     def get_queryset(self):
         """Return objects for the current authenticated user only"""
         return self.queryset.filter(user=self.request.user).order_by('-name')
