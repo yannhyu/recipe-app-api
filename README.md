@@ -24,3 +24,29 @@ docker-compose run --rm app sh -c "python manage.py test"
 docker-compose run --rm app sh -c "python manage.py startapp recipe"
 
 docker-compose run --rm app sh -c "python manage.py makemigrations"
+
+# To test in browser
+docker-compose up
+chrome + modify header extension
+127.0.0.1:8000/api/user/
++++++++++++++++++++++++++++++++
+
+127.0.0.1:8000/api/user/create/
+test@londonappdev.compose
+Awesome1
+Test Name
++++++++++++++++++++++++++++++++
+
+api/user/token/
+test@londonappdev.compose
+Awesome1
+{
+    "token": "e4ebeea999a32a3dcd79026b97fc221c93a2d829"
+}
+
+update token in mod-header extension
+
++++++++++++++++++++++++++++++++
+api/recipe
+http://127.0.0.1:8000/api/recipe/ingredients/
+Cabbage
