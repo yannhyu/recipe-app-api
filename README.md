@@ -50,3 +50,6 @@ update token in mod-header extension
 api/recipe
 http://127.0.0.1:8000/api/recipe/ingredients/
 Cabbage
+
+
+docker-compose run --rm app sh -c "python manage.py makemigrations core"
