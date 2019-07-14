@@ -6,6 +6,7 @@ from recipe import views
 router = DefaultRouter()   # Auto generate API endpoints for TagViewSet
 router.register('tags', views.TagViewSet)
 router.register('ingredients', views.IngredientViewSet)
+router.register('recipes', views.RecipeViewSet)
 
 app_name = 'recipe'    # So that the reverse() can locate the correct urls
 
