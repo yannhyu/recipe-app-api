@@ -57,3 +57,8 @@ docker-compose run --rm app sh -c "python manage.py makemigrations core"
 enable image related media and static settings
 
 docker-compose build
+
+
+add recipe image feature in models
+
+docker-compose run --rm app sh -c "python manage.py makemigrations core"
