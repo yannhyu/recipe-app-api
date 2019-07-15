@@ -1,0 +1,33 @@
+docker-compose up
+
+google chrome
+http://127.0.0.1:8000/
+
+http://127.0.0.1:8000/api/user/token/
+test@londonappdev.com
+Awesome1
+
+HTTP 200 OK
+Allow: POST, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "token": "e4ebeea999a32a3dcd79026b97fc221c93a2d829"
+}
+
+put token in mode headers:
+
+http://127.0.0.1:8000/api/recipe/tags/
+Vegan
+
+http://127.0.0.1:8000/api/recipe/ingredients/
+Limes
+
+
+http://127.0.0.1:8000/api/recipe/recipes/
+Vegan key lime pie
+Lime
+Vegan
+60 min
+15.00
